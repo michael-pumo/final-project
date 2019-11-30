@@ -72,9 +72,70 @@ main {
 
 #image-1:hover {
     background: url("../images/IMG_3952.jpg"); 
-    background-size: 100% 100%;
-    
-}
+    background-size: 100% 100%; }
+
+/* Styles for the Future Event page */
+
+.fevent-1 {
+    width: 25%;
+    float: left;
+    padding: 3% 0 0 5%; }
+
+.fevent-2 {
+    width: 30%;
+    float: left;
+    padding: 3% 0 0 3%; }
+
+.fevent-2 p { padding-left: 5% }
+
+.fevent-3{
+    width: 27%;
+    float: left;
+    margin: 2.5% 0% 0 9%; }
+
+address { padding-left: 5%; }
+
+li { padding: 3% 0 0 2%; }
+
+/* the styles for the Past Events page */
+
+.figure-pevents {
+    margin: 20px;
+    padding: 15px; }
+
+.figcaption-pevents {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    padding-bottom: 10px; }
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%; }
+
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em; }
+
+thead {
+    font-weight: bold;
+    background-color: whitesmoke; }
+
+tbody tr:nth-child(even) {
+    background-color: lightgray; }
+
+td:nth-child(4) {
+    text-align: right; }
+
+.align-right {
+    float: right;
+    margin-right: 36.5px; }
+
+.align-left {
+    float: left;
+    margin-left: 36.5px; }
 
 /* Styles for the contact page */
 
@@ -92,8 +153,7 @@ main {
 
 .section-c {
     clear: both;
-    text-align: center;
-}
+    text-align: center; }
 
 label {
     color: navy;
@@ -150,3 +210,6 @@ textarea {
     width: 15em;
     box-shadow: 2px 2px 0 navy;
     background-color: silver; }
+
+
+
