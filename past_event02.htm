@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<!--
-    This section displays the comments that pertain to the website.
--->
+
 <html lang="en-US">
 <head>
+    <!--
+        *************************************************************
+        Title: Home Page
+        Use: To help visitors learn the results of past events
+        Author: Michael Pumo
+        School/Term: Southern Illinois University, Fall 2019
+        Developed: November 25, 2019
+        Tested: December 6, 2019; Passed on Safari and Chrome browsers
+        *************************************************************
+    -->
+        <title>Pumo's Independent Wrestling Company</title>
         <meta charset="utf-8">
-        <title>Page Title</title>
+        <meta name="description" content="The hottest indie promotion in Chicago since 2019!">
+        <meta name="keywords" content="chicago, wrestling, wrestlers, sports, entertainment">     
+        <meta name="viewport" content="width=device-width, intital-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
 </head>
 <body>
     <header>
         <h1>Pumo's Independent Wrestling Promotion</h1>
         <h2>The hottest indie promotion in Chicago since 2019!</h2>
-         <nav id="nav_menu">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
                 <ul> 
                     <li><a href=index.htm>Home</a></li>
                     <li><a href=roster.htm>Roster</a></li>
@@ -89,10 +110,10 @@
                     </tbody>            
                 </table>           
             </figure>
-            <p class="align-left"><a href="past_event.htm">Next event</a></p>
-            <p class="align-right"><a href="past_event03.htm">Previous event</a></p>
-        </section>
-        <section class="section-nav">
+            <section class="section-nav">
+                <p class="align-left"><a href="past_event.htm">Next event</a></p>
+                <p class="align-right"><a href="past_event03.htm">Previous event</a></p>
+            </section>
         </section>
     </main>
 </body>

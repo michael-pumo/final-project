@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<!--
-    This section displays the comments that pertain to the website.
--->
+
 <html lang="en-US">
 <head>
+    <!--
+        *************************************************************
+        Title: Home Page
+        Use: To help visitors learn about the upcoming
+        Author: Michael Pumo
+        School/Term: Southern Illinois University, Fall 2019
+        Developed: November 25, 2019
+        Tested: December 6, 2019; Passed on Safari and Chrome browsers
+        *************************************************************
+    -->
+        <title>Pumo's Independent Wrestling Company</title>
         <meta charset="utf-8">
-        <title>Page Title</title>
+        <meta name="description" content="The hottest indie promotion in Chicago since 2019!">
+        <meta name="keywords" content="chicago, wrestling, wrestlers, sports, entertainment">     
+        <meta name="viewport" content="width=device-width, intital-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
 </head>
 <body>
     <header>
         <h1>Pumo's Independent Wrestling Promotion</h1>
         <h2>The hottest indie promotion in Chicago since 2019!</h2>
-         <nav id="nav_menu">
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
                 <ul> 
                     <li><a href=index.htm>Home</a></li>
                     <li><a href=roster.htm>Roster</a></li>
@@ -24,54 +45,46 @@
     </header>
     <main>
         <section class="section-solo">
-            <div class="container-fevent">
-                <div class="fevent-1">
-                    <h2>Upcoming show...</h2>
-                    <h3>Saturday, December 7 2019</h3>
-                    <address><b>115 Bourbon Street</b>
-                        <br>3359 W 115th St.
-                        <br>Merrionette, IL 60803
-                        <br>1-847-555-0988
-                        <br><br><a href="https://g.page/115BourbonStreet">Google Maps</a>
-                    </address>
-                    <br><p>Bell time: 8 PM CST</p>
-                </div>
-                <div class="fevent-2">
-                    <h2>Scheduled Matches:</h2>
-                    <ul>
-                        <li>Jimmy Havok vs Mance Warner 
-                            <ul>
-                                <li>Last man standing match!</li>
-                            </ul>
-                        </li>
-                        <li>Thunder Rosa vs Melina Perez</li>
-                        <li>Joey Janela and Joey Ryan vs The Young Bucks</li>
-                        <li>Jushin Lyger vs Ultimo Dragon</li>
-                        <li>Kenny Omega vs Darby Allin  
-                            <ul>
-                                <li>Steel cage match!</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p>...and many more still to be announced!</p>
-                
-                </div>
-                <div class="fevent-3">
-                    <video id="videoplayer" height="430" src="media/fevent.mp4" controls autoplay></video>
-                </div>
-            
+            <div class="fevent-1">
+                <h2>Upcoming show...</h2>
+                <h3>Saturday, December 7 2019</h3>
+                <address><b>115 Bourbon Street</b>
+                    <br>3359 W 115th St.
+                    <br>Merrionette, IL 60803
+                    <br>1-847-555-0988
+                    <br><br><a href="https://g.page/115BourbonStreet">Google Maps</a>
+                </address>
+                <p>Bell time: 8 PM CST</p>
+                <p>Ticket prices:</p>
+                <ul>
+                    <li>1st row: $50</li>
+                    <li>2nd row: $35</li>
+                    <li>General admission: $20</li>
+                </ul>
             </div>
-           
-                
-           
+            <div class="fevent-2">
+                <h2>Scheduled Matches:</h2>
+                <ul>
+                    <li>Jimmy Havok vs Mance Warner 
+                        <ul>
+                            <li>Last man standing match!</li>
+                        </ul>
+                    </li>
+                    <li>Thunder Rosa vs Melina Perez</li>
+                    <li>Joey Janela and Joey Ryan vs The Young Bucks</li>
+                    <li>Jushin Lyger vs Ultimo Dragon</li>
+                    <li>Kenny Omega vs Darby Allin  
+                        <ul>
+                            <li>Steel cage match!</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>...and many more still to be announced!</p>                
+            </div>
+            <div class="fevent-3">
+                <video id="videoplayer" muted height="430" src="media/fevent.mp4" controls autoplay></video>
+            </div>            
         </section>
-        
-        
-         
-        
-            
-    
     </main>
-
 </body>
 </html>
