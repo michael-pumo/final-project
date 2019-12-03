@@ -74,7 +74,7 @@ main {
 
 .section-solo {
     margin: 2.5%;   
-    min-height: 480px;    
+    min-height: 480px; 
     border: 1px solid black;
     border-radius: 10px;
     background-color: ghostwhite;  
@@ -90,6 +90,42 @@ main {
 #image-1:hover {
     background: url("../images/IMG_3952.jpg"); 
     background-size: 100% 100%; }
+
+/* Styles for the roster page */
+
+
+.roster-div { 
+    width: auto;
+    max-width: 30%;
+    float: left;
+    margin: 2.5% 0 1% 1%; 
+    padding: auto; }
+
+.roster-figure1, .roster-figure2 { 
+    margin: 1em 0 0 1em; 
+    width: auto;
+    max-width: 40%;
+    clear: both;
+    float: left; }
+
+.roster-p { 
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px gray; } 
+
+.roster-caption {
+    display: block;
+    font-size: 80%;
+    font-weight: bold;
+    padding-top: .25em;
+    padding-bottom: 2em; }
+
+.roster-ul {
+    font-size: 90%;
+    min-width: auto;
+    max-width: 40%;
+    float: left;
+    margin: 1.5em 0 0 0; }
 
 
 /* Styles for the Future Event page */
@@ -137,7 +173,7 @@ address { padding-left: 5%; }
 table {
     border: 1px solid black;
     border-collapse: collapse;
-   width: 100%}
+    width: 100% }
 
 th, td {
     border: 1px solid black;
@@ -190,7 +226,8 @@ label {
 input {
     margin-left: 1em;
     margin-bottom: .5em;
-    width: 20em; }
+    width: 45%;
+    max-width: 20em; }
 
 input:focus { border: 2px solid navy; }
 
@@ -207,7 +244,8 @@ select {
     border: 1px solid red; }
 
 textarea { 
-    width: 20em;
+    width: 45%;
+    max-width: 20em;
     margin-left: 1em;
     margin-bottom: 1em; }
 
@@ -243,7 +281,16 @@ legend { font-weight: bold; }
 
 /* tablet portrait to standard 960 */
 @media only screen and (max-width: 959px) { 
-/*    body {background-color: blue; }    */
+/*    body {background-color: blue; }  */
+    .roster-figure1, .roster-figure2 {
+        margin: 1em 0 0 1em;
+        min-width: 20%;
+        max-width: 35%;    }
+    .roster-caption { font-size: 75%; }
+    .roster-ul {
+        font-size: 80%;
+        min-width: 20%;
+        max-width: 35%; }
     .div-a, .div-b { width: 95%;
         margin-left: 2.5%; }
     .div-b { float: left; }
@@ -265,7 +312,10 @@ legend { font-weight: bold; }
         height: auto;
         float: none; } 
     .section-2, .fevent-3, video { display: none; } 
-    .fevent-1, .fevent-2 { width: 45%; }
+    .section-solo {overflow: auto;}
+    .roster-div { max-width: 100%; }
+    .roster-figure1, .roster-figure2 { margin-left: 5%; }
+    .fevent-1, .fevent-2 { width: 90%; }
     th, td{ display: block;}
     thead { display: none; }
     td:nth-child(3) { text-align: left; }    
